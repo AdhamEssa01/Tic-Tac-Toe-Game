@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 800px;
+    margin-top: 50px;
+}
+.board {
+    background-color: hotpink;
+    text-align: center;
+    border-radius: 3px;
+    padding: 10px 0;
+    font-size: 40px;
+}
+.board span {
+    color: yellow;
+}
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+.squire {
+    width: 32%;
+    background-color: rgba(255, 105, 180, 0.7);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+.squire:hover {
+    background-color: black;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .container {
+        margin-top : 150px;
+        width: 300px;
+    }
+    .squire {
+        height: 100px;
+    }
+    .board {
+        padding: 10px 0;
+        margin-bottom: 10px;
+    }
+    .game {
+        gap: 5px;
+    }
+}
